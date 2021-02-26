@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script
+      src="https://kit.fontawesome.com/f6816dd194.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <navbar id="nav" class="nav">
+      <div class="logo-container">
+        <img src="/img/logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <button class="btn" id="btn" onclick="expand();">
+          <i id="icon" class="fas fa-bars fa-2x"></i>
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </navbar>
+    <!-- navbar end -->
+
+    <!-- main section -->
+    <section class="main" id="main">
+      <div class="left">
+        <p class="heading">We Are building software to help</p>
+        <button class="btn2">Contact Now</button>
+      </div>
+      <div class="right">
+        <img src="/img/mainimg.png" alt="" />
+      </div>
+    </section>
+    <!-- main section end-->
+
+    <!-- about section -->
+    <section class="about">
+      <p>About Us</p>
+      <div class="card-container">
+        <div class="card">
+          <h1 class="cardheading">WEB DESIGN & BRAND IDENTITY</h1>
+          <h3 class="cardtext">
+            You understand your customers better than anyone. We know that, and
+            we can help you turn that knowledge into results. We’ll help you
+            refine an online brand experience that showcases the power of your
+            business.
+          </h3>
+        </div>
+        <div class="card">
+          <h1 class="cardheading">DIGITAL MARKETING</h1>
+          <h3 class="cardtext">
+            A one-size-fits-all approach is the wrong approach. We’ll leverage
+            our marketing-savvy skills to provide you with a winning strategy.
+            Do you want to scale up your business? Need more leads and more
+            customers? We can help with that.
+          </h3>
+        </div>
+        <div class="card">
+          <h1 class="cardheading">WEBSITE & APP DEVELOPMENT</h1>
+          <h3 class="cardtext">
+            We’re a different kind of web agency. We offer a team of veteran
+            developers, technical experts, and strategists who know the right
+            questions to ask to get you on track with the right features, the
+            perfect platform and the capacity to scale up your business.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- about section end-->
+
+    <!-- main section2 -->
+    <section class="main2">
+      <div class="left">
+        <img src="/img/main2.jpg" alt="" />
+      </div>
+      <div class="right">
+        <p class="main2Heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          cupiditate corporis id minus, quae optio ipsa deserunt, corrupti
+          possimus quis facere rerum! Cumque praesentium voluptatibus ex dolor
+          suscipit optio, quis cupiditate quas magnam non dicta beatae expedita
+          nesciunt, asperiores temporibus at esse. Dolores voluptate
+          necessitatibus blanditiis consequuntur id nihil quia.
+        </p>
+      </div>
+    </section>
+    <!-- main section2 end-->
+
+    <!-- slider -->
+    <section class="slider">
+      <p class="sliderHeading">Our Team Member</p>
+      <div class="slider-card-container">
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">Jonh</h1>
+        </div>
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">William</h1>
+        </div>
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">Harper</h1>
+        </div>
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">Jackson</h1>
+        </div>
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">Ella</h1>
+        </div>
+        <div class="slider-card">
+          <img src="/img/user.png" alt="">
+          <h1 class="cardheading">Avery</h1>
+        </div>
+      </div>
+    </section>
+    <!-- slider end-->
+
+    <!-- contact -->
+    <div class="contact-container">
+      <input type="text" name="email" placeholder="Enter Email....">
+      <input type="password" name="password" placeholder="Enter Password....">
+      <textarea name="" cols="100" rows="8"></textarea>
+      <button class="submit-btn">Submit</button>
+    </div>
+    <!-- contact end-->
+
+    <div class="blankDiv"></div>
+
+    <script>
+      const nav = document.getElementById("nav");
+      const main = document.getElementById("main");
+      const icon = document.getElementById("icon");
+      const expand = (e) => {
+        nav.classList.toggle("active");
+        main.classList.toggle("activeMain");
+        console.log(main.style.top);
+        console.log(main.style.top);
+        if (icon.classList.contains("fa-bars")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      };
+    </script>
+  </body>
+</html>
